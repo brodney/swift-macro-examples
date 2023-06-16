@@ -147,3 +147,7 @@ public macro CustomCodable() = #externalMacro(module: "MacroExamplesPlugin", typ
 @attached(member, names: arbitrary)
 @attached(conformance)
 public macro MyOptionSet<RawType>() = #externalMacro(module: "MacroExamplesPlugin", type: "OptionSetMacro")
+
+@attached(member, names: named(==))
+@attached(conformance)
+public macro blerp() = #externalMacro(module: "MacroExamplesPlugin", type: "EquatableMacro")

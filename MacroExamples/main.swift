@@ -200,3 +200,16 @@ struct ShippingOptions {
 }
 
 print(Value.Meta(.integer(42)) == .integer)
+
+@blerp
+class A {
+  let x: Int = 0
+//  public static func ==(lhs: A, rhs: A) -> Bool {
+//    return true
+//  }
+}
+
+//extension A: Equatable {}
+
+let yyyyy = A()
+//yyyyy == A()
